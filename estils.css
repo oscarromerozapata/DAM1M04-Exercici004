@@ -1,3 +1,53 @@
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 400;
+  background-color: blue;
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  font-weight: 500;
+}
+h1 {
+  font-size: 100px;
+}
+.colores {
+    font-size: 3rem;
+    font-weight: bold;
+    animation: color 3s  infinite;
+  }
+
+  @keyframes color {
+    from{color: #EE6A3C;}
+    to{color:#1A4DC9;}
+  }
+.card{
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 32px;
+  min-height: 10dvh;
+  list-style: none;
+  margin-left: 10dvh;
+  margin-right: 10dvh;
+  margin-top:0 ;
+}
+.menu { 
+  margin: 0 5px; 
+  display: flex;
+}
+.izquierda { 
+    margin-right: auto; 
+}
+img{
+  height:30px; 
+  width:auto;
+}
+.etiqueta, .dada {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 400;
+}
+
 .hero {
   position: relative;
   isolation: isolate;
@@ -33,3 +83,4 @@
     display: none !important;
   }
 }
+
