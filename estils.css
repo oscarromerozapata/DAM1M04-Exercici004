@@ -1,52 +1,98 @@
+
 body {
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 400;
   background-color: blue;
   margin: 0 auto;
+  letter-spacing: -0.025em;
+  line-height: 1.55;
 }
-
 h1, h2, h3 {
   font-weight: 500;
 }
 h1 {
-  font-size: 100px;
+  font-size: clamp(44px, 6.4vw, 88px);
 }
-.colores {
-    font-size: 3rem;
-    font-weight: bold;
-    animation: color 3s  infinite;
-  }
-
-  @keyframes color {
-    from{color: #EE6A3C;}
-    to{color:#1A4DC9;}
-  }
 .card{
   background-color: white;
   display: flex;
+  flex-wrap: nowrap;
   align-items: center;
   padding: 0 32px;
   min-height: 10dvh;
   list-style: none;
-  margin-left: 10dvh;
-  margin-right: 10dvh;
-  margin-top:0 ;
+  margin: 0 10% 0;
 }
 .menu { 
   margin: 0 5px; 
   display: flex;
+  flex-direction: row;
 }
 .izquierda { 
     margin-right: auto; 
 }
 img{
-  height:30px; 
+  height:22px; 
   width:auto;
+}
+.menu>.see{
+  border-radius: 20px;
+  background-color: red;
+  padding: 5px 10px 5px 8px;
+  width: 194px 29px;
+  
+}
+.punto{
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+button{
+  height:40px; 
+  width:auto;
+  border-radius: 40px;
+  color: white;
+  background-color: #000;
+  padding: 12px 18px;
+  flex-shrink: 0;
 }
 .etiqueta, .dada {
   font-family: 'JetBrains Mono', monospace;
   font-weight: 400;
 }
+.pagina1{
+  padding: 0 10% ;
+  
+
+}
+.stradaicon{
+  width: 56px;
+  height: 56px;
+  margin-bottom: 28px;
+}
+.pagina1>p {
+  font-size: clamp(19px, 1.6vw, 23px);
+  color: #2a2d33;
+  
+}
+.colores {
+  font-weight: bold;
+  background: linear-gradient(90deg, #EE6A3C, #1A4DC9, #EE6A3C);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: color 2s linear infinite;
+}
+
+@keyframes color {
+  from { background-position: 200% 50%; }
+  to   { background-position: 0% 50%; }
+}
+
 
 .hero {
   position: relative;
@@ -56,6 +102,7 @@ img{
     radial-gradient(ellipse at 80% 15%, #f3dce8, transparent 60%),
     radial-gradient(ellipse at 60% 0%, #fae6d1, transparent 55%),
     #fbfbfa;
+  padding: 100px 0 0;
 }
 
 .hero-graph {
