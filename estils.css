@@ -4,7 +4,10 @@ body {
   background-color: blue;
   margin: 0 auto;
   letter-spacing: -0.025em;
-  
+  color: #2a2d33;
+}
+a {
+  text-decoration: none;
 }
 .web{
   max-width: 1200px;
@@ -18,15 +21,13 @@ h1, h2, h3 {
 h1 {
   margin-top: 0;
   font-size: clamp(44px, 6.4vw, 88px);
-  color: #2a2d33;
+  
 }
 .txt1 {
   font-size: clamp(19px, 1.6vw, 23px);
-  color: #2a2d33;
   margin: 0 0 40px;
   font-size: 23px;
   max-width: 820px;
-  
 }
 .card{
   background-color: white;
@@ -42,12 +43,19 @@ h1 {
   display: flex;
   flex-direction: row;
 }
+.medio{
+  color: #6E7480; 
+}
 .izquierda { 
-    margin-right: auto; 
+    margin-right: auto;
+}
+.derecha { 
+    margin-left: auto; 
 }
 img{
   height:22px; 
   width:auto;
+  
 }
 .see{
   color: #6E7480;
@@ -55,11 +63,7 @@ img{
   border: 1px solid #6E7480;
   padding: 5px 10px 5px 8px;
   width: 194px 29px;
-  
-  
 }
-
-
 button{
   height:40px; 
   width:auto;
@@ -69,8 +73,6 @@ button{
   padding: 12px 18px;
   font-size: 15px;
   white-space: nowrap;
-  text-decoration: none;
-  
 }
 .etiqueta, .dada {
   font-family: 'JetBrains Mono', monospace;
@@ -97,6 +99,36 @@ button{
   from { background-position: 200% 50%; }
   to   { background-position: 0% 50%; }
 }
+.link-platform {
+  display: flex;
+  align-items: center;
+  color: #2a2d33;
+  
+}
+h2 {
+  font-size: clamp(30px, 3.4vw, 44px);
+}
+
+.nexus-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-top: 112px;
+}
+.plataform {
+  padding:140px 32px ;
+  background-color: white;
+  
+}
+.plataform>p{
+  color: #2a2d33;
+  font-size: 15px;
+  
+}
+
+
+
+
 
 .hero {
   position: relative;
@@ -134,7 +166,14 @@ button{
     display: none !important;
   }
 }
-
+@media (max-width: 880px)  {
+  .medio{
+    display: none;
+  }
+  .see{
+    display: none;
+  }
+}
 
 @media(max-width: 640px) {
   .web {
