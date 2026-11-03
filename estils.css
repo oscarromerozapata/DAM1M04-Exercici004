@@ -1,27 +1,41 @@
-
 body {
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 400;
   background-color: blue;
   margin: 0 auto;
   letter-spacing: -0.025em;
-  line-height: 1.55;
+  
+}
+.web{
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  padding: 0 32px;
 }
 h1, h2, h3 {
   font-weight: 500;
 }
 h1 {
+  margin-top: 0;
   font-size: clamp(44px, 6.4vw, 88px);
+  color: #2a2d33;
+}
+.txt1 {
+  font-size: clamp(19px, 1.6vw, 23px);
+  color: #2a2d33;
+  margin: 0 0 40px;
+  font-size: 23px;
+  max-width: 820px;
+  
 }
 .card{
   background-color: white;
   display: flex;
   flex-wrap: nowrap;
-  align-items: center;
-  padding: 0 32px;
-  min-height: 10dvh;
+  align-items: center; 
+  height: 66px;
   list-style: none;
-  margin: 0 10% 0;
+  max-width: 1200px;
 }
 .menu { 
   margin: 0 5px; 
@@ -35,19 +49,16 @@ img{
   height:22px; 
   width:auto;
 }
-.menu>.see{
+.see{
+  color: #6E7480;
   border-radius: 20px;
-  background-color: red;
+  border: 1px solid #6E7480;
   padding: 5px 10px 5px 8px;
   width: 194px 29px;
   
+  
 }
-.punto{
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background-color: #000;
-}
+
 
 button{
   height:40px; 
@@ -56,27 +67,21 @@ button{
   color: white;
   background-color: #000;
   padding: 12px 18px;
-  flex-shrink: 0;
+  font-size: 15px;
+  white-space: nowrap;
+  text-decoration: none;
+  
 }
 .etiqueta, .dada {
   font-family: 'JetBrains Mono', monospace;
   font-weight: 400;
 }
-.pagina1{
-  padding: 0 10% ;
-  
-
-}
 .stradaicon{
   width: 56px;
   height: 56px;
-  margin-bottom: 28px;
-}
-.pagina1>p {
-  font-size: clamp(19px, 1.6vw, 23px);
-  color: #2a2d33;
   
 }
+
 .colores {
   font-weight: bold;
   background: linear-gradient(90deg, #EE6A3C, #1A4DC9, #EE6A3C);
@@ -92,7 +97,6 @@ button{
   from { background-position: 200% 50%; }
   to   { background-position: 0% 50%; }
 }
-
 
 .hero {
   position: relative;
@@ -131,3 +135,9 @@ button{
   }
 }
 
+
+@media(max-width: 640px) {
+  .web {
+    padding: 0 19px;
+  }
+}
