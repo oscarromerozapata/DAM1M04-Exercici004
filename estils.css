@@ -14,6 +14,7 @@ a {
   top: 0;
   z-index: 1000;
   background-color: #fff;
+  border-bottom: 2px solid #ffd3d3;
 }
 .web{
   max-width: 1200px;
@@ -125,9 +126,9 @@ h2 {
   background-color: white;
   
 }
-.plataform>p{
-  color: #2a2d33;
-  font-size: 15px;
+.miniseparador{
+  color: #6E7480;
+  font-size: 12px;
   
 }
 
@@ -189,7 +190,66 @@ h2 {
   
   
 }
+.operationalvalue{
+  padding:140px 0;
+}
+.cardoperationalvalue{
+  flex-wrap: nowrap;
+  align-items: center; 
+  list-style: none;
+  max-width: 1200px;
+  flex-direction: column;
+}
+.menuoperationalvalue { 
+  padding: 0 32px;
+  margin: 0 5px; 
+  display: flex;
+  align-items: center;
+}
+.barraoperationalvalue, .minibarra{
+  height: 8px;
+  width: 36px;
+  background: linear-gradient(to right, red,rgb(236, 3, 236) );
+  border-radius: 20px;
+  border: 1px solid black;
+}
+.cajamenuoperationalvalue {
+  margin: 56px 0 0;
+  padding: 36px 40px;
+  border-radius: 20px;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  color: #6E7480;
+  box-sizing: border-box;
+}
 
+.subcajamenuoperational, .numoperational{
+  width: 50%;
+  box-sizing: border-box;
+  
+}
+.numoperational{
+  display: flex;
+}
+.subcajamenuoperational:nth-child(2) {
+  text-align: right;
+  
+}
+
+.numerosoperationalvalue, .extraoperational{
+  font-size: clamp(48px, 6vw, 80px);
+  
+}
+.numerosoperationalvalue{
+  color:black
+}
+.minibarra{
+  height: 4px;
+  width: 18px;
+  display: flex;
+}
 
 
 .hero {
