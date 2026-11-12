@@ -187,8 +187,6 @@ h2 {
   color: #6E7480;
 
   font-size: clamp(22px, 2.2vw, 30px);
-  
-  
 }
 .operationalvalue{
   padding:140px 0;
@@ -200,6 +198,7 @@ h2 {
   max-width: 1200px;
   flex-direction: column;
 }
+
 .menuoperationalvalue { 
   padding: 0 32px;
   margin: 0 5px; 
@@ -233,6 +232,11 @@ h2 {
 .numoperational{
   display: flex;
 }
+.subcajamenuoperationalvalue:nth-child(1), .subcajamenuoperational:nth-child(2) {
+  margin:0 0 22px;
+  padding:0 0 18px;
+  
+}
 .subcajamenuoperational:nth-child(2) {
   text-align: right;
   
@@ -249,6 +253,43 @@ h2 {
   height: 4px;
   width: 18px;
   display: flex;
+}
+.fondofromthefield {
+  padding: 112px 0;
+  background-color: #0E0F12;
+  position: relative;
+  overflow: hidden;
+}
+
+.fondofromthefield::before {
+  content: "";
+  position: absolute;
+  top: -10%;
+  right: -10%;
+  width: 55%;
+  height: 120%;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse at 70% 30%, rgba(30, 130, 120, 0.55), transparent 60%),
+    radial-gradient(ellipse at 40% 70%, rgba(90, 140, 40, 0.4), transparent 60%);
+  filter: blur(60px);
+}
+.cajafromthefield{
+  margin: 56px 0 0;
+  padding: 36px 40px;
+  border-radius: 20px;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  color: #6E7480;
+  box-sizing: border-box;
+}
+.textobarra{
+  flex-direction: row;
+  color:#F5F6F8B8;
+  font-size: 12px;
+  display:flex;
 }
 
 
