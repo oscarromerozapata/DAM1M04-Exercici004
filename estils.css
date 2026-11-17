@@ -213,6 +213,8 @@ h2 {
   background: linear-gradient(to right, red,rgb(236, 3, 236) );
   border-radius: 20px;
   border: 1px solid black;
+  margin-right:2px;
+  
 }
 .cajamenuoperationalvalue {
   margin: 56px 0 0;
@@ -358,6 +360,7 @@ h2 {
   color:#F5F6F8B8;
   font-size: 12px;
   display:flex;
+  align-items: center;
 }
 @property --n { syntax: "<integer>"; initial-value: 0; inherits: false; }
 
@@ -390,6 +393,8 @@ h2 {
 
 .workflows{
   padding:140px 0;
+  background: #F8F5EE;
+  
 }
 
 .workflowtextocabecera{
@@ -468,7 +473,11 @@ h2 {
   opacity: 1;
 }
 
-
+.atlas{
+  padding: 140px 0;
+  display: flex;
+  align-items: center;
+}
 
 
 
