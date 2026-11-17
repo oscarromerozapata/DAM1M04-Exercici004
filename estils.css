@@ -305,6 +305,7 @@ h2 {
 .cajafromthefield{
   display: flex;
 }
+
 .separadorfromthefield:nth-child(1){
   min-width: 620px;
 
