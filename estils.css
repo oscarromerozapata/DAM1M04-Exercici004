@@ -160,33 +160,34 @@ h2 {
   border:1px solid #E5E5E5;
   display: flex;
   padding: 80px 0 ;
-  
   background: linear-gradient(to right top, rgba(168, 43, 212, 0.32),white ,rgba(168, 43, 212, 0.32));  
 }
 .separadorplataform>div{
-  
-  
   max-width: 860px;
   margin: 0 auto;
   padding: 0 120px;
   align-items: center;
-  
 }
 .separador1{
   color: #1A1C20;
   font-size: clamp(22px, 2.2vw, 30px);
-  
+ 
 }
 .separador1>p{
   display: flex;
-  justify-content: center;
-
-  
+  text-align: center;
 }
 .separador2{
   color: #6E7480;
-
   font-size: clamp(22px, 2.2vw, 30px);
+}
+.separador2>p{
+  
+  text-align: center;
+}
+.separador1,.separador2{
+   display: flex;
+  justify-content: center;
 }
 .operationalvalue{
   padding:140px 0;
@@ -227,7 +228,6 @@ h2 {
 .subcajamenuoperational, .numoperational{
   width: 50%;
   box-sizing: border-box;
-  
 }
 .numoperational{
   display: flex;
@@ -241,7 +241,22 @@ h2 {
   text-align: right;
   
 }
-
+.textooperational{
+  display: flex;
+}
+.botonoperational{
+  display:flex;
+  margin: 16px 0;
+  background-color: #abc9ff9e;
+  border-radius: 10px;
+  padding: 2px 8px;
+  border-color: #636363;
+  color: #000;
+}
+.lineatexto{
+  display: flex;
+  align-items: row  ;
+}
 .numerosoperationalvalue, .extraoperational{
   font-size: clamp(48px, 6vw, 80px);
   
@@ -277,19 +292,7 @@ h2 {
     filter: blur(50px);
   
 }
-.cajafromthefield{
 
-
-  flex-wrap: wrap;
-  
-  color: #6E7480;
-  box-sizing: border-box;
-  flex-direction: column;
-
-}
-.cajacajafromthefield{
-  flex-direction: row;
-}
 .cajitafromthefield{
     position: relative;
     background: rgba(255, 255, 255, 0.035);
@@ -299,12 +302,24 @@ h2 {
     box-shadow: 0 30px 80px -40px rgba(0, 0, 0, 0.6);
     overflow: hidden
 }
-.filacajita{
+.cajafromthefield{
+  display: flex;
+}
+.separadorfromthefield:nth-child(1){
+  min-width: 620px;
+
+}
+.separadorfromthefield:nth-child(2){
+  min-width: 440px;
 
 }
 .filacajita:nth-child(1){
   font-size: 13.5px;
   color: #A8ACB4;
+}
+.textofromthefield{
+  font-size: 17px;
+  color:white;
 }
 .textobarra{
   flex-direction: row;
@@ -397,4 +412,9 @@ footer {
   .web {
     padding: 0 19px;
   }
+}
+@media(max-width: 640px) {
+  .separador1, .separador2>p{
+  text-align: justify;
+}
 }
