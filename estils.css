@@ -271,7 +271,7 @@ h2 {
 }
 .fondofromthefield {
   position: relative;
-  overflow: hidden;
+  overflow: clip;
   padding: 112px 0;
   background: #0E0F12;
   display: flex;
@@ -295,15 +295,44 @@ h2 {
 
 .cajitafromthefield{
     position: relative;
-    background: rgba(255, 255, 255, 0.035);
-    border: 1px solid rgba(245, 246, 248, 0.10);
-    border-radius: 14px;
-    padding: 26px 28px 8px;
-    box-shadow: 0 30px 80px -40px rgba(0, 0, 0, 0.6);
-    overflow: hidden
+    width: 100%;
+    max-width: 554px;
+    padding: 32px 35px 20px;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, .12);
+    background: rgba(255, 255, 255, .05);
+    backdrop-filter: blur(12px);
+    overflow: hidden;
+  }
+
+.cajitafromthefield::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #e6c619, #4fc16a, #2aa3d6, #8a4fe0);
+  }
+.fila {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 0;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+  }
+
+.fila span {
+  font-size: 16px;
+  color: rgba(255, 255, 255, .65);
+}
+
+.fila strong {
+  font-size: 28px;
+  font-weight: 500;
+  color: white;
 }
 .cajafromthefield{
   display: flex;
+  gap:72px
 }
 
 .separadorfromthefield:nth-child(1){
@@ -320,7 +349,8 @@ h2 {
 }
 .textofromthefield{
   font-size: 17px;
-  color:white;
+  color:rgb(168, 172, 180);
+  line-height: 1.7;
 }
 .textobarra{
   flex-direction: row;
@@ -328,21 +358,27 @@ h2 {
   font-size: 12px;
   display:flex;
 }
-
 @property --n { syntax: "<integer>"; initial-value: 0; inherits: false; }
+
+.seccion {
+  timeline-trigger-name: --t;
+  timeline-trigger-source: view();
+  trigger-scope: --t;
+}
 
 .numerosfrom {
   font-size: clamp(88px, 11vw, 120px);
   color: #F5F6F8;
   margin: 12px 0 14px;
-  counter-reset: n var(--n);
   font-variant-numeric: tabular-nums;
+  counter-reset: n var(--n);
   animation: contar 2.5s ease-out forwards;
+  animation-trigger: --t play-once;
 }
+
 .numerosfrom::after { content: counter(n); }
 
 @keyframes contar { to { --n: 13000; } }
-
 .abajonum{
   font-family:"JetBrains Mono";
   margin-bottom: 36px;
