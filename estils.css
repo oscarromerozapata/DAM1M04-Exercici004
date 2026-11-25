@@ -223,18 +223,12 @@ h2 {
   padding: 36px 40px;
   border-radius: 20px;
   border: 1px solid black;
-<<<<<<< HEAD
   display: flex;
   color: #6E7480;
 }
 .cajamenuoperationalvalue > .subcajamenuoperational {
   flex: 1;
   min-width: 0;
-=======
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-  color: #6E7480;
->>>>>>> 0748a5e1fe921f5ad6aa1c8399bb5f02e936af49
 }
 
 .numoperational{
@@ -331,12 +325,7 @@ h2 {
   color: white;
 }
 .cajafromthefield{
-<<<<<<< HEAD
   display: flex;
-=======
-  display: grid;
-  grid-template-columns: 7fr 5fr;
->>>>>>> 0748a5e1fe921f5ad6aa1c8399bb5f02e936af49
 }
 .cajafromthefield > .separadorfromthefield:nth-child(1) { flex: 7; min-width: 0; }
 .cajafromthefield > .separadorfromthefield:nth-child(2) { flex: 5; min-width: 0; }
